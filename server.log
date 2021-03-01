@@ -1,0 +1,408 @@
+Watching for file changes with StatReloader
+Not Found: /
+"POST / HTTP/1.1" 404 2029
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_response(request, response)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/middleware/common.py", line 106, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+"POST /vrc/login?addfavorite=avtr_77ddd0d7-edb4-4af9-a527-c639f3c82b14 HTTP/1.1" 500 64761
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_response(request, response)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/middleware/common.py", line 106, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+"POST /vrc/login?addfavorite=avtr_77ddd0d7-edb4-4af9-a527-c639f3c82b14 HTTP/1.1" 500 64959
+Watching for file changes with StatReloader
+"POST /vrc/login?addfavorite=avtr_8522c7e1-5c83-45c7-82b0-89b4bf424400 HTTP/1.1" 200 150
+"POST /vrc/login?addfavorite=avtr_8522c7e1-5c83-45c7-82b0-89b4bf424400 HTTP/1.1" 200 84
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /expandavatars
+"GET /expandavatars HTTP/1.1" 404 2085
+Internal Server Error: /vrc/expandavatars
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 426, in secret_checkforavatars
+    userAvatars = secret_getAvatarsFromUser(request,avatar.authorId)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 406, in secret_getAvatarsFromUser
+    data = secret_authrequest(request,url)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 380, in secret_authrequest
+    responsedata = json.loads(resp.content)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 518, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /vrc/expandavatars HTTP/1.1" 500 132395
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/expandavatars
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 432, in secret_checkforavatars
+    saveAvatar2(avatar1)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 276, in saveAvatar2
+    print(avatar['name'])
+TypeError: string indices must be integers
+"GET /vrc/expandavatars HTTP/1.1" 500 77400
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/expandavatars
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 432, in secret_checkforavatars
+    saveAvatar2(avatar1)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 276, in saveAvatar2
+    print(avatar['name'])
+TypeError: string indices must be integers
+"GET /vrc/expandavatars HTTP/1.1" 500 77213
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /vrc/expandavatars HTTP/1.1" 200 41
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /vrc/login HTTP/1.1" 200 18
+"POST /vrc/login HTTP/1.1" 200 12
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_response(request, response)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/middleware/common.py", line 106, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+"POST /vrc/login HTTP/1.1" 500 63607
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 78
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 111, in login
+    if logintestdata["error"] == None:
+KeyError: 'error'
+"POST /vrc/login HTTP/1.1" 500 72926
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 39631
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 78
+"POST /vrc/login HTTP/1.1" 200 39631
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /vrc/login?moderations=true HTTP/1.1" 200 39631
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login?moderations=true HTTP/1.1" 200 79798
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login?userdata=true HTTP/1.1" 200 39631
+"POST /vrc/login?userdata=true HTTP/1.1" 200 78
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 113, in login
+    print(logintestdata.has('error'))
+AttributeError: 'dict' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 68788
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 113, in login
+    print(logintestdata.has("error"))
+AttributeError: 'dict' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 68788
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 113, in login
+    print(logintestdata.isNull("error"))
+AttributeError: 'dict' object has no attribute 'isNull'
+"POST /vrc/login HTTP/1.1" 500 68806
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 114, in login
+    print(json.dumps(logintestdata).has("error"))
+AttributeError: 'str' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 68769
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 114, in login
+    print(logintestdata.has("error"))
+AttributeError: 'Response' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 68654
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 114, in login
+    print(logintestdata["error" == None])
+KeyError: False
+"POST /vrc/login HTTP/1.1" 500 68505
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 114, in login
+    print(logintestdata["dsaderror" == None])
+KeyError: False
+"POST /vrc/login HTTP/1.1" 500 68513
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 114, in login
+    print(logintestdata["errodsadr"] == None)
+KeyError: 'errodsadr'
+"POST /vrc/login HTTP/1.1" 500 68577
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 117, in login
+    print(loginjson.has("error"))
+AttributeError: 'str' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 69037
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 117, in login
+    print(loginjson.has("error"))
+AttributeError: 'str' object has no attribute 'has'
+"POST /vrc/login HTTP/1.1" 500 79716
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 112, in login
+    print(logintestdata["status_code"])
+KeyError: 'status_code'
+"POST /vrc/login HTTP/1.1" 500 73445
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 112, in login
+    print(logintestdata["status_code"])
+KeyError: 'status_code'
+"POST /vrc/login HTTP/1.1" 500 68567
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 112, in login
+    print(logintestdata['status_code'])
+KeyError: 'status_code'
+"POST /vrc/login HTTP/1.1" 500 68564
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+Internal Server Error: /vrc/login
+Traceback (most recent call last):
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/roofy/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py", line 112, in login
+    print(logintestdata["error"]["status_code"])
+KeyError: 'error'
+"POST /vrc/login HTTP/1.1" 500 73459
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /vrc/login?userdata=true HTTP/1.1" 200 1507
+"POST /vrc/login?userdata=true HTTP/1.1" 200 78
+"POST /vrc/login HTTP/1.1" 200 78
+"POST /vrc/login HTTP/1.1" 200 22
+/home/roofy/DjangoProject/rooyfwbackdocker/RooyfwBack/vrcapi/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /vrc/login?addfavorite=avtr_8522c7e1-5c83-45c7-82b0-89b4bf424400 HTTP/1.1" 200 82
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /vrc/login HTTP/1.1" 200 78
+"POST /vrc/login HTTP/1.1" 200 22
+"POST /vrc/login?moderations=true HTTP/1.1" 200 1506
